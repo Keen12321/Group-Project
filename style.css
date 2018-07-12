@@ -1,0 +1,16 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+.container {
+	display: flex;
+	width: 900px;
+	height: 2000px;
+	margin: 0 auto;
+}
+
+
+.reservations {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+}
