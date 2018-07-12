@@ -1,0 +1,17 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+.navbar {
+	display: flex;
+	flex-direction: column;
+}
+.navbar a {
+	text-decoration: none;
+	color: #333745;
+}
+.container {
+	display: flex;
+	width: 100%;
+	height: 3000px;
+	background: red;
+}
