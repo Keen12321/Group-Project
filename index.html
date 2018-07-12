@@ -10,17 +10,31 @@
 	<div class="container">
 			
 		<div id="reservations-form">
+
 			<form id="reservations">
-				<input type="text" placeholder="Full Name" class="reservation-item">
-				<input type="text" placeholder="Number of Guests" class="reservation-item">
-				<input type="text" class="reservation-item">
-				<textarea name="special-notes" id="special-notes" cols="30" rows="10"></textarea>
+
+				<label for="reservation__full-name">Full Name</label>
+				<input id="reservation__full-name" class="reservation-item" type="text" placeholder="Full Name">
+				
+				<label for="reservation__guests"l>Number of Guests</label>
+				<input id="reservation__guests" class="reservation-item" type="text" placeholder="Number of Guests">
+				
+				<label for="reservation__calendar">Date</label>
+				<input type="date" id="reservation__calendar" class="reservation-item" name="date"
+               value="2018-07-22"
+               min="2018-01-01" max="2018-12-31" />
+				
+				<label for="reservation__special-notes">Special Notes</label>
+				<textarea id="reservation__special-notes" class="reservation-item" name="special-notes"></textarea>
+				
 				<select id="seating-preference" class="reservation-item">
 					<option value="indoor">Indoor</option>
 					<option value="outdoor">Outdoor</option>
 				</select>
-				<button type="submit" class="reservation-item">Reserve Table</button>
+				
+				<button class="reservation-item" type="submit">Reserve Table</button>
 			</form>
+
 		</div>
 
 	</div>
