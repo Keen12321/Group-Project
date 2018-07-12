@@ -1,0 +1,10 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+.container {
+	display: flex;
+	width: 800px;
+	height: 2000px;
+	margin: 0 auto;
+	background:red;
+}
