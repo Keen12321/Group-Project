@@ -7,3 +7,12 @@ html { box-sizing: border-box; }
 	height: 2000px;
 	margin: 0 auto;
 }
+
+#reservations-form {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	background: red;
+}
+
