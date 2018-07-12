@@ -13,6 +13,11 @@ html { box-sizing: border-box; }
 	height: 300px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	background: red;
 }
 
+.reservation-item {
+	width: 80%;
+	height: 30px;
+}
