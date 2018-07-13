@@ -127,7 +127,8 @@ a:hover {
 }
 
 .tab-panels ul li.active {
-
+	color: #fff;
+	background: #666;
 }
 
 .tab-panels .panel {
@@ -135,11 +136,23 @@ a:hover {
     padding: 30px;
 }
 
+.panel {
+	display: none;
+}
+
+.panel.active {
+	display: block;
+}
 
 #panel1 img{
 	width: 540px;
 	height: 300px;
 }
+
+.menu {
+
+}
+
 
 #panel3 {
 	width: 600px;
@@ -207,6 +220,18 @@ a:hover {
 	word-wrap: break-word;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	outline: none;
+	margin-bottom: 25px;
+}
+
+#reservation__special-notes {
+	height: 100px;
+}
+
+#reservebutton {
+	height: 35px;
+	font-size: 16px;
+	background: #e63462;
 }
 
 .foodphotos {
@@ -223,3 +248,5 @@ a:hover {
 	width: 270px;
 	height: 270px;
 }
+
+

@@ -23,10 +23,10 @@ $(function () {
 
         var panelToShow = $(this).attr('rel')
 
-        $panel.find('.panel.active').slideUp(650, showNextPanel)
 
         function showNextPanel() {
           $(this).removeClass('active')
+
 
           $('#'+panelToShow).slideDown(650, function() {
           $(this).addClass('active')
@@ -34,31 +34,24 @@ $(function () {
       }
 	})
 
-	$("#nav1").on('click', function(){
-	  // if ($('.tabs li.active') == true) {
-	  $('#panel2').removeClass('active').css("display", "none")
-	  $('#panel3').removeClass('active').css("display", "none")
-	$("#panel1").addClass('active').css("display", "inline-block")
-	 console.log('message here', $('.tabs li.active'))
-	})
-
- $("#nav2").on('click', function(){
-    // if ($('.tabs li.active') == true) {
-      $('#panel1').removeClass('active').css("display", "none")
-      $('#panel3').removeClass('active').css("display", "none")
-    $("#panel2").addClass('active').css("display", "inline-block")
-     console.log('another message', $('.tabs li.active'))
-    })
-
- $("#nav3").on('click', function(){
-      // if ($('.tabs li.active') == true) {
-      $('#panel1').removeClass('active').css("display", "none")
-      $('#panel2').removeClass('active').css("display", "none")
-    $("#panel3").addClass('active').css("display", "inline-block")
-    })
 
     var menuJSON = 'https://obscure-tundra-54269.herokuapp.com/casual-dining'
-    $.getJSON (menuJSON, function(data) {
-        console.log(data.entrees)
+    $.getJSON (menuJSON, function(menu) {
+        const name = document.getElementById('menuname')
+        const price = document.getElementById('menuprice')
+        const description = document.getElementById('menudescription')
+
+        menu.appetizers.forEach(function(data) {
+            name.append(data.name)
+        })
+
+        menu.appetizers.forEach(function(data) {
+            price.append(data.price)
+        })
+
+        menu.appetizers.forEach(function(data) {
+            description.append(data.description)
+        })
     })
+
 })
