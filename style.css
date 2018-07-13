@@ -18,7 +18,7 @@ body {
 	font-family: 'Cabin', sans-serif;
 }
 
-#container {
+.container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -38,6 +38,7 @@ body {
 	width: 120px;
 	background: #eef5db;
 }
+
 .navbar a {
 	text-decoration: none;
 	font-family: 'Cabin', sans-serif;
@@ -61,13 +62,21 @@ body {
 	display: flex;
 	justify-content: flex-end;
 }
+
 .social p {
 	padding-right: 15px;
 }
+
 .social p a {
 	text-decoration: none;
 	color: #333745;
 }
+
+.social img {
+	width: 130px;
+	height: 40px;
+}
+
 a:hover {
 	text-decoration: underline;
 	opacity: 0.8;
