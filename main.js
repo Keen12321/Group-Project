@@ -8,7 +8,6 @@ $(document).ready(function() {
       .end().appendTo(".hero")
     }, 3000)
 
-})
 	
 	$('.tab-panels .tabs li').on('click', function() {
 
