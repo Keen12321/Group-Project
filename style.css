@@ -1,6 +1,12 @@
-<<<<<<< HEAD
 html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;}
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
 
 .navbar {
 	position: fixed;
@@ -11,8 +17,8 @@ html {box-sizing: border-box;}
 	overflow-x: hidden;
 	width: 120px;
 	background: #eef5db;
-	border: 1px dashed orange;
 }
+
 .navbar a {
 	text-decoration: none;
 	font-family: 'Cabin', sans-serif;
@@ -31,7 +37,6 @@ html {box-sizing: border-box;}
 	width: 800px;
 	margin: 0 auto;
 	background: #eef5db;
-	border: 1px dashed blue;
 }
 
 .logo {
@@ -46,15 +51,22 @@ html {box-sizing: border-box;}
 	width: 300px;
 	display: flex;
 	justify-content: flex-end;
-	border: 1px dashed purple;
 }
+
 .social p {
 	padding-right: 15px;
 }
+
 .social p a {
 	text-decoration: none;
 	color: #333745;
 }
+
+.social img {
+	width: 130px;
+	height: 40px;
+}
+
 a:hover {
 	text-decoration: underline;
 	opacity: 0.8;
