@@ -50,8 +50,13 @@ body {
 }
 
 .logo {
-	background: url("https://i.imgur.com/t0aaDr1.png");
-	background-size: contain;
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	border: 1px solid blue;
+}
+
+.logo img {
 	width: 150px;
 	height: 150px;
 	margin: 5px;
@@ -61,6 +66,7 @@ body {
 	width: 300px;
 	display: flex;
 	justify-content: flex-end;
+	border: 1px solid orange;
 }
 
 .social p {
@@ -96,6 +102,7 @@ a:hover {
 	left: 0;
 	width: 900px;
 	height: 300px;
+	padding-bottom: 20px;
 	margin: 0 auto;
 }
 
@@ -221,4 +228,11 @@ a:hover {
 .sidepic {
 	width: 270px;
 	height: 270px;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+	.logo { margin: auto; }
+	.social {width: 100px; height: 50px; margin: auto;}
 }
