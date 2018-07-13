@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Surfin' Taco</title>
+	<title>Surfin' Tacos</title>
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
 	<div class="navbar">
 				<nav>
-					<a href="story">Story</a>
-					<a href="menu">Menu</a>
-					<a href="reservations">Reservations</a>
+					<a id="nav1" href="#panel1">Story</a>
+					<a id="nav2" href="#panel2">Menu</a>
+					<a id="nav3" href="#panel3">Reservations</a>
 				</nav>
 	</div>
 	<div class="container">
@@ -23,6 +24,7 @@
 				<p><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></p>
 				<p><a href="#"><i class="fab fa-twitter fa-2x"></i></a></p>
 				<p><a href="#"><i class="fab fa-instagram fa-2x"></i></a></p>
+				<p><a href="#"><img src="assets/opentable-black.png"></a></p>
 
 			</div>
 			<div class="hero">
@@ -32,7 +34,39 @@
 				<img src="assets/herson-rodriguez-96102-unsplash.jpg">
 				<img src="assets/christine-siracusa-363257-unsplash.jpg">
 				<img src="assets/michal-janek-394776-unsplash.jpg">
-      </div>
+     		 </div>
+<!-- RESERVATIONS SECTION -->
+      
+<!-- RESERVATIONS SECTION -->
+
+<!-- INFORMATION ARTICLES -->
+		<div id="info-cards">
+			<!-- News -->
+			<div id="info-cards__news" class="card">
+				<h3>Latest News</h3>
+				<h5>This is the Title of the News</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non odio laudantium repudiandae esse aperiam sint, quia est accusantium, cum mollitia sed earum, cumque placeat. Debitis nostrum dolore, repellat in dicta.</p>
+			</div>
+
+			<!-- Food Specials -->
+			<div id="info-cards__food-specials" class="card">
+				<h3>Today's Specials</h3>
+				<img id="info-cards__food-photo" src="http://via.placeholder.com/250x90">
+				<h5 id="info-cards__food-item">Food Item and Price</h5>
+				<p id="info-cards__food-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quo minima labore, autem reiciendis vitae, ratione omnis accusantium ex nobis necessitatibus molestias consequatur hic voluptas officiis, mollitia, impedit dolor tempore.</p>
+			</div>
+
+			<!-- Location -->
+			<div id="info-cards__location" class="card">
+				<h3>Our Location</h3>
+				<img src="http://via.placeholder.com/250x90">
+				<p>555 North West St., HI 96722</p>
+				<p>555-456-3421 & #8226; Map & #8226; Directions</p>
+			</div>	
+		</div>
+<!-- INFORMATION ARTICLES -->
+
+		<div id="blog"></div>
 
         <div class="tab-panels">
 			<ul class="tabs">
@@ -45,10 +79,10 @@
 				<img src="sidepictures/SurfinTacos(1).jpg">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cum deleniti ipsam nobis dolorum nulla possimus, quos ab minima quas voluptas quis maiores, obcaecati temporibus hic laboriosam provident modi unde!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, pariatur quas, molestias quod ab labore aspernatur ducimus placeat quibusdam voluptatem odio repellendus quae ut, autem totam aperiam tempora architecto nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium tempore a labore dignissimos soluta consequatur nam, error, nesciunt ipsam quod, consequuntur. Incidunt necessitatibus nostrum itaque consequatur deleniti accusantium nisi.</p>
 			</div>
-			<div id="panel2" class="panel">
+			<div id="panel2" class="panel"
 				<div id="menuname" class="menu"></div>
 				<div id="menuprice" class="menu"></div>
-				<div id="menudescription" class="menu"></div>
+        <div id="menudescription" class="menu"></div>
 			</div>
 			<div id="panel3" class="panel">
 		        <label class="label" for="reservation__full-name">Full Name</label>
@@ -68,6 +102,8 @@
 		        </select>
 		        <button class="reservation-item" id="reservebutton" type="submit">Reserve Table</button>
 		    </div>
+			
+			
 		</div>
 
 		<div class="foodphotos">
@@ -88,12 +124,11 @@
 
 
 	</div>
-
+</div>
 <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
 <script src="main.js"></script>
-
 </body>
 </html>
