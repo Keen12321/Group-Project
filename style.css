@@ -7,13 +7,42 @@ html { box-sizing: border-box; }
 	height: 2000px;
 	margin: 0 auto;
 }
-<<<<<<< HEAD
 
+
+#navmenu {
+	width: 70%;
+	height: 50px;
+}
+
+#tabs {
+	display: flex;
+    font-size: 20px;
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#tabs li {
+	padding: 10px 25px;
+}
+
+#tabs a {
+	color: black;
+	text-decoration: none;
+}
+
+
+
+.nav {
+	display: none;
+}
 
 .reservations {
 	display: flex;
 	flex-direction: column;
 	width: 600px;
 }
-=======
->>>>>>> c2355d020639223b0346ab129b20d3f0b13950da
+
+
+

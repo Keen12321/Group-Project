@@ -2,43 +2,51 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Surfin' Taco</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="container">
 
-		<div class="story">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed modi, in quaerat, expedita, laboriosam sit rem voluptatum, ut id explicabo odio illo aliquid sint nostrum tenetur mollitia! Voluptatem, mollitia, incidunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, corrupti laboriosam, repellendus adipisci dolorum, in laborum ab voluptatibus quis consequuntur qui ipsam! Iste eligendi repellendus corporis accusantium adipisci officiis temporibus?</p>
-			<a data-flickr-embed="true"  href="https://www.flickr.com/photos/40726522@N02/9277764323/in/photolist-f8QY6R-785yvj-8v3Xxt-bmrmeZ-aDpUte-7Btjeu-nU3TDF-6BRTWA-mXswrH-p9uWxu-R1r13z-nv29AB-nzrbua-SYqrjf-brgGoD-9vu5cX-nJFYEL-74uabK-a1GY94-23PvYuU-fxHvWb-UiNUt2-9gQfUz-UUPifn-ac4LkZ-e9cCs4-oc2w3y-oTMSup-fGdGj-6J8jFz-eabRk-f71nSm-bf25pv-abovvg-gHnqat-qurRRF-4CY8N-64AfPL-iNfUpz-hepwQm-RG2tHA-ac14kA-qS86Kv-UUPjQg-CfzQsS-8KF5dk-obqvXo-nrcMMC-6f19jC-uWSYn" title="Fish Tacos"><img src="https://farm3.staticflickr.com/2815/9277764323_f5e94fcb84_z.jpg" width="640" height="425" alt="Fish Tacos"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cum deleniti ipsam nobis dolorum nulla possimus, quos ab minima quas voluptas quis maiores, obcaecati temporibus hic laboriosam provident modi unde!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, pariatur quas, molestias quod ab labore aspernatur ducimus placeat quibusdam voluptatem odio repellendus quae ut, autem totam aperiam tempora architecto nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium tempore a labore dignissimos soluta consequatur nam, error, nesciunt ipsam quod, consequuntur. Incidunt necessitatibus nostrum itaque consequatur deleniti accusantium nisi.</p>
-		</div>
-		<div class="menu">
 
-		</div>
-		<div class="reservations">
-			<form>
-				<label for="name">Full Name</label>
-				<input type="text" id="name" name="name"><br />
-				<label for="guests">Number of Guests</label>
-				<input type="text" id="guests" name="guests"><br />
-				<label for="date">Date</label>
-				<input type="text" id="date" name="date"><br />
-				<label for="specialnotes">Special Notes</label>
-				<textarea id="specialnotes" name="specialnotes"></textarea><br />
-				<label for="seating">Seating Preference</label>
-				<select id="seating" name="seating"><br />
-					<option>Indoor</option>
-					<option>Outdoor</option>
-					<option>Bar</option>
-				</select><br />
-				<button id="reservetable">Reserve Table</button>
-			</form>
-		</div>
+		<div id="navmenu">
+			<ul id="tabs">
+				<li><a href="javascript:rudrSwitchTab('tb_1', 'story')">Our Story</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#reservations">Reservation</a></li>
+			</ul>
+			<div id="story" class="nav">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed modi, in quaerat, expedita, laboriosam sit rem voluptatum, ut id explicabo odio illo aliquid sint nostrum tenetur mollitia! Voluptatem, mollitia, incidunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, corrupti laboriosam, repellendus adipisci dolorum, in laborum ab voluptatibus quis consequuntur qui ipsam! Iste eligendi repellendus corporis accusantium adipisci officiis temporibus?</p>
+				<img src="https://farm3.staticflickr.com/2815/9277764323_f5e94fcb84_z.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cum deleniti ipsam nobis dolorum nulla possimus, quos ab minima quas voluptas quis maiores, obcaecati temporibus hic laboriosam provident modi unde!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, pariatur quas, molestias quod ab labore aspernatur ducimus placeat quibusdam voluptatem odio repellendus quae ut, autem totam aperiam tempora architecto nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium tempore a labore dignissimos soluta consequatur nam, error, nesciunt ipsam quod, consequuntur. Incidunt necessitatibus nostrum itaque consequatur deleniti accusantium nisi.</p>
+			</div>
+			<div id="menu" class="nav">
 
+			</div>
+			<div id="reservations" class="nav">
+				<form>
+					<label for="name">Full Name</label>
+					<input type="text" id="name" name="name"><br />
+					<label for="guests">Number of Guests</label>
+					<input type="text" id="guests" name="guests"><br />
+					<label for="date">Date</label>
+					<input type="text" id="date" name="date"><br />
+					<label for="specialnotes">Special Notes</label>
+					<textarea id="specialnotes" name="specialnotes"></textarea><br />
+					<label for="seating">Seating Preference</label>
+					<select id="seating" name="seating"><br />
+						<option>Indoor</option>
+						<option>Outdoor</option>
+						<option>Bar</option>
+					</select><br />
+					<button id="reservetable">Reserve Table</button>
+				</form>
+			</div>
+		</div>
 
 
 	</div>
+
 <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
