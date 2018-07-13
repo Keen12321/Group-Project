@@ -40,7 +40,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	background: var(--orange-color);
-	color: var(--light-text-color)
+	color: var(--light-text-color);
 }
 
 .label {
@@ -51,4 +51,22 @@ body {
 	width: 100%;
 	height: 30px;
 	padding: 5px;
+}
+
+/* ==========================================================================
+   Information Cards
+   ========================================================================== */
+#info-cards {
+	width: 900px;
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.card {
+	height: 200px;
+	width: 300px;
+	padding: 15px;
+	background: var(--light-green-color);
 }
