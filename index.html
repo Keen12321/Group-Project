@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<title>Surfin' Taco</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
 	<div class="navbar">
 				<nav>
-					<a href="story">Story</a>
-					<a href="menu">Menu</a>
-					<a href="reservations">Reservations</a>
+					<a id="nav1" href="#panel1">Story</a>
+					<a id="nav2" href="#panel2">Menu</a>
+					<a id="nav3" href="#panel3">Reservations</a>
 				</nav>
-			</div>
+	</div>
 	<div class="container">
 			
 			<div class="logo">
@@ -34,13 +33,56 @@
 				<img src="assets/herson-rodriguez-96102-unsplash.jpg">
 				<img src="assets/christine-siracusa-363257-unsplash.jpg">
 				<img src="assets/michal-janek-394776-unsplash.jpg">
+      </div>
+
+        <div class="tab-panels">
+			<ul class="tabs">
+				<li rel="panel1" class="active">Our Story</li>
+				<li rel="panel2">Menu</li>
+				<li rel="panel3">Reservations</li>
+			</ul>
+			<div id="panel1" class="panel active">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed modi, in quaerat, expedita, laboriosam sit rem voluptatum, ut id explicabo odio illo aliquid sint nostrum tenetur mollitia! Voluptatem, mollitia, incidunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, corrupti laboriosam, repellendus adipisci dolorum, in laborum ab voluptatibus quis consequuntur qui ipsam! Iste eligendi repellendus corporis accusantium adipisci officiis temporibus?</p>
+				<img src="https://farm3.staticflickr.com/2815/9277764323_f5e94fcb84_z.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cum deleniti ipsam nobis dolorum nulla possimus, quos ab minima quas voluptas quis maiores, obcaecati temporibus hic laboriosam provident modi unde!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, pariatur quas, molestias quod ab labore aspernatur ducimus placeat quibusdam voluptatem odio repellendus quae ut, autem totam aperiam tempora architecto nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium tempore a labore dignissimos soluta consequatur nam, error, nesciunt ipsam quod, consequuntur. Incidunt necessitatibus nostrum itaque consequatur deleniti accusantium nisi.</p>
 			</div>
+			<div id="panel2" class="panel">
+				<p>fasdfasdfasdfasfsf</p>
+
+			</div>
+			<div id="panel3" class="panel">
+		        <label class="label" for="reservation__full-name">Full Name</label>
+		        <input id="reservation__full-name" class="reservation-item" type="text" placeholder="Full Name">
+		        <label class="label" for="reservation__guests"l>Number of Guests</label>
+		        <input id="reservation__guests" class="reservation-item" type="text" placeholder="Number of Guests">
+		        <label class="label" for="reservation__calendar">Date</label>
+		        <input type="date" id="reservation__calendar" class="reservation-item" name="date"
+		               value="2018-07-22"
+		               min="2018-01-01" max="2018-12-31" />
+		        <label class="label" for="reservation__special-notes">Special Notes</label>
+		        <textarea id="reservation__special-notes" class="reservation-item" name="special-notes"></textarea>
+		        <label class="label" for="reservation__seating">Seating Preference</label>
+		        <select id="reservation__seating" class="reservation-item">
+		          <option value="indoor">Indoor</option>
+		          <option value="outdoor">Outdoor</option>
+		        </select>
+		        <button class="reservation-item" type="submit">Reserve Table</button>
+		    </div>
+		</div>
+
+		<div class="foodphotos">
+			<h3>Food Photos...</h3>
+			\
+		</div>
+
+
 	</div>
-	<script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous"></script>
-	<script src="main.js"></script>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="main.js"></script>
 
 </body>
 </html>
