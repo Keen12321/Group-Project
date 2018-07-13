@@ -114,20 +114,28 @@ a:hover {
     background: #666;
 }
 
-.tab-panels ul li.active {
-
-}
-
 .tab-panels .panel {
 	width: 600px;
     padding: 30px;
 }
 
+.panel {
+	display: none;
+}
+
+.panel.active {
+	display: block;
+}
 
 #panel1 img{
 	width: 540px;
 	height: 300px;
 }
+
+.menu {
+
+}
+
 
 #panel3 {
 	width: 600px;
@@ -144,6 +152,11 @@ a:hover {
 	height: 30px;
 	padding: 5px;
 	outline: none;
+	margin-bottom: 25px;
+}
+
+#reservation__special-notes {
+	height: 100px;
 }
 
 .foodphotos {
@@ -160,3 +173,5 @@ a:hover {
 	width: 270px;
 	height: 270px;
 }
+
+
