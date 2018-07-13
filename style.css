@@ -164,6 +164,12 @@ a:hover {
 	height: 100px;
 }
 
+#reservebutton {
+	height: 35px;
+	font-size: 16px;
+	background: #e63462;
+}
+
 .foodphotos {
 	width: 280px;
 	margin-top: 50px;
