@@ -8,31 +8,36 @@
 </head>
 <body>
 
-	<div class="container">
+	<div id="container">
+
+		<div id="header">header</div>
+    
+    <div class="container">
 			
-		<div id="reservations-form">
-			<label class="label" for="reservation__full-name">Full Name</label>
-			<input id="reservation__full-name" class="reservation-item" type="text" placeholder="Full Name">
-			
-			<label class="label" for="reservation__guests"l>Number of Guests</label>
-			<input id="reservation__guests" class="reservation-item" type="text" placeholder="Number of Guests">
-			
-			<label class="label" for="reservation__calendar">Date</label>
-			<input type="date" id="reservation__calendar" class="reservation-item" name="date"
-             value="2018-07-22"
-             min="2018-01-01" max="2018-12-31" />
-			
-			<label class="label" for="reservation__special-notes">Special Notes</label>
-			<textarea id="reservation__special-notes" class="reservation-item" name="special-notes"></textarea>
-			
-			<label class="label" for="reservation__seating">Seating Preference</label>
-			<select id="reservation__seating" class="reservation-item">
-				<option value="indoor">Indoor</option>
-				<option value="outdoor">Outdoor</option>
-			</select>
-			
-			<button class="reservation-item" type="submit">Reserve Table</button>
-		</div>
+<!-- RESERVATIONS SECTION -->
+      <div id="reservations-form">
+        <label class="label" for="reservation__full-name">Full Name</label>
+        <input id="reservation__full-name" class="reservation-item" type="text" placeholder="Full Name">
+        <label class="label" for="reservation__guests"l>Number of Guests</label>
+        <input id="reservation__guests" class="reservation-item" type="text" placeholder="Number of Guests">
+        <label class="label" for="reservation__calendar">Date</label>
+        <input type="date" id="reservation__calendar" class="reservation-item" name="date"
+               value="2018-07-22"
+               min="2018-01-01" max="2018-12-31" />
+        <label class="label" for="reservation__special-notes">Special Notes</label>
+        <textarea id="reservation__special-notes" class="reservation-item" name="special-notes"></textarea>
+        <label class="label" for="reservation__seating">Seating Preference</label>
+        <select id="reservation__seating" class="reservation-item">
+          <option value="indoor">Indoor</option>
+          <option value="outdoor">Outdoor</option>
+        </select>
+        <button class="reservation-item" type="submit">Reserve Table</button>
+      </div>
+  <!-- RESERVATIONS SECTION -->
+    
+		<div id="hero">hero</div>
+		<div id="news">news</div>
+		<div id="blog">blog</div>
 
 	</div>
 
@@ -41,5 +46,6 @@
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
 	<script src="main.js"></script>
+
 </body>
 </html>
