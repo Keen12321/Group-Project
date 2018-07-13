@@ -3,8 +3,6 @@
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; padding: 0; margin: 0;}
 
-/* Theme Colors
-   ========================================================================== */
 :root {
 	/* For backgrounds or borders */
 	--orange-color: #fe5f55;
@@ -16,24 +14,125 @@ html { box-sizing: border-box; }
 	--dark-text-color: #333745;
 }
 
-/* Main Page Styles
-   ========================================================================== */
 body {
 	font-family: 'Cabin', sans-serif;
 }
 
 #container {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 901px;
+	margin: 0 auto;
+	background: #eef5db;
+}
+
+.navbar {
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	width: 120px;
+	background: #eef5db;
+}
+.navbar a {
+	text-decoration: none;
+	font-family: 'Cabin', sans-serif;
+	font-size: 14px;
+	color: #333745;
+	display: inline-block;
+	width: 120px;
+	padding: 10px;
+}
+
+.logo {
+	background: url("https://i.imgur.com/t0aaDr1.png");
+	background-size: contain;
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+}
+
+.social {
+	width: 300px;
+	display: flex;
+	justify-content: flex-end;
+}
+.social p {
+	padding-right: 15px;
+}
+.social p a {
+	text-decoration: none;
+	color: #333745;
+}
+a:hover {
+	text-decoration: underline;
+	opacity: 0.8;
+}
+
+.hero {
+	position: relative;
 	width: 900px;
-	height: 2000px;
+	height: 300px;
+	padding-top: 10px;
+	border-top: 2px solid #333745;
+
+}
+.hero img {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 900px;
+	height: 300px;
 	margin: 0 auto;
 }
 
-/* ==========================================================================
-   Reservation feature
-   ========================================================================== */
-#reservations-form {
-	width: 300px;
+.tab-panels {
+	margin-top: 50px;
+}
+
+.tab-panels ul {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #333;
+}
+
+.tab-panels ul li {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 40px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.tab-panels ul li:hover {
+    color: #fff;
+    background: #666;
+}
+
+.tab-panels ul li.active {
+
+}
+
+.tab-panels .panel {
+	width: 600px;
+    padding: 30px;
+}
+
+
+#panel1 img{
+	width: 540px;
+	height: 300px;
+}
+
+#panel3 {
+	width: 600px;
 	height: 375px;
 	padding: 15px;
 	display: flex;
@@ -44,7 +143,7 @@ body {
 }
 
 .label {
-	padding: 5px;
+	padding-left: 5px;
 }
 
 .reservation-item {
@@ -98,4 +197,19 @@ body {
 	word-wrap: break-word;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.foodphotos {
+	width: 280px;
+	margin-top: 50px;
+	margin-left: 5px;
+}
+
+.foodphotos h3 {
+	margin-top: 0px;
+}
+
+.sidepic {
+	width: 270px;
+	height: 270px;
 }
