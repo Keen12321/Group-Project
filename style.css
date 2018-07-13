@@ -114,6 +114,11 @@ a:hover {
     background: #666;
 }
 
+.tab-panels ul li.active {
+	color: #fff;
+	background: #666;
+}
+
 .tab-panels .panel {
 	width: 600px;
     padding: 30px;

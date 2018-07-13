@@ -11,18 +11,22 @@ $(document).ready(function() {
 	
 	$('.tab-panels .tabs li').on('click', function() {
 
-		var $panel = $(this).closest('.tab-panels')
+		 var $panel = $(this).closest('.tab-panels')
+
+        $panel.find('.tabs li.active').removeClass('active')
+        $(this).addClass('active')
+
         var panelToShow = $(this).attr('rel')
 
-        $panel.find('.panel.active').slideUp(showNextPanel)
-        
+
         function showNextPanel() {
             $(this).removeClass('active')
 
-            $('#' + panelToShow).slideDown(function() {
+            $('#'+panelToShow).slideDown(function() {
                 $(this).addClass('active')
             })
         }
+        $panel.find('.panel.active').slideUp(showNextPanel)
 
 	})
 
