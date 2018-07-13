@@ -1,5 +1,12 @@
+$(function () {
 
-$(document).ready(function() {
+	var specialsAPI = 'https://obscure-tundra-54269.herokuapp.com/bar-food'
+	$.getJSON(specialsAPI, function(data) {
+		// $('#info-cards__food-photo').text(data.appetizers[0].image)
+		$('#info-cards__food-item').text(data.appetizers[0].name)
+		$('#info-cards__food-description').text(data.appetizers[0].description)
+	})
+
 
     $(".hero img:gt(0)").hide()
     setInterval(function(){
@@ -58,8 +65,11 @@ $(document).ready(function() {
               $('#panel2').removeClass('active').css("display", "none")
             $("#panel3").addClass('active').css("display", "inline-block")
             })
-
-  })  
-
+  
 
 
+    var menuJSON = 'https://obscure-tundra-54269.herokuapp.com/casual-dining'
+    $.getJSON (menuJSON, function(data) {
+        console.log(data.entrees)
+    })
+})
