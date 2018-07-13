@@ -29,6 +29,11 @@ $(document).ready(function() {
         }
 
 	})	
+
+    var menuJSON = 'https://obscure-tundra-54269.herokuapp.com/casual-dining'
+    $.getJSON (menuJSON, function(data) {
+        console.log(data.entrees)
+    })
 })
 
 

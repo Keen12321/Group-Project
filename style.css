@@ -147,10 +147,16 @@ a:hover {
 }
 
 .foodphotos {
-	width: 299px;
-	margin-top: 50px
+	width: 280px;
+	margin-top: 50px;
+	margin-left: 5px;
 }
 
 .foodphotos h3 {
 	margin-top: 0px;
+}
+
+.sidepic {
+	width: 270px;
+	height: 270px;
 }
