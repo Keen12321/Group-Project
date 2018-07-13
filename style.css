@@ -3,16 +3,76 @@ html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;}
 
 .navbar {
-	display: flex;
-	flex-direction: column;
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	width: 120px;
+	background: #eef5db;
+	border: 1px dashed orange;
 }
 .navbar a {
 	text-decoration: none;
+	font-family: 'Cabin', sans-serif;
+	font-size: 14px;
 	color: #333745;
+	display: inline-block;
+	width: 120px;
+	padding: 10px;
 }
+
 .container {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 800px;
-	height: 2000px;
 	margin: 0 auto;
-	background:red;
+	background: #eef5db;
+	border: 1px dashed blue;
+}
+
+.logo {
+	background: url("https://i.imgur.com/t0aaDr1.png");
+	background-size: contain;
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+}
+
+.social {
+	width: 300px;
+	display: flex;
+	justify-content: flex-end;
+	border: 1px dashed purple;
+}
+.social p {
+	padding-right: 15px;
+}
+.social p a {
+	text-decoration: none;
+	color: #333745;
+}
+a:hover {
+	text-decoration: underline;
+	opacity: 0.8;
+}
+
+.hero {
+	position: relative;
+	width: 800px;
+	height: 300px;
+	padding-top: 10px;
+	border-top: 2px solid #333745;
+
+}
+.hero img {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 800px;
+	height: 300px;
+
+}
