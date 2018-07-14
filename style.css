@@ -53,7 +53,6 @@ body {
 	width: 150px;
 	height: 150px;
 	margin: 5px;
-	border: 1px solid blue;
 }
 
 .logo img {
@@ -66,7 +65,6 @@ body {
 	width: 300px;
 	display: flex;
 	justify-content: flex-end;
-	border: 1px solid orange;
 }
 
 .social p {
@@ -233,6 +231,15 @@ a:hover {
 
 
 @media only screen and (max-width: 1100px) {
-	.logo { margin: auto; }
-	.social {width: 100px; height: 50px; margin: auto;}
+	.logo { margin: auto; justify-content: center; margin-bottom: 15px;}
+	.container {flex-direction: column; width: 100%;}
+	.social {width: 100px; height: 50px; margin: auto; justify-content: center;}
+	#info-cards {flex-wrap: wrap; justify-content: center; }
+	.card {width: 350px;}
+	.hero, .hero img {object-fit: contain; justify-content: center; max-width: 400px;}
+	.hero {margin: 0 auto;}
+	#info-cards__news {}
+	.navbar {height: 110px; position: absolute;}
 }
+
+@media only screen and (max-width: 800px) {}
