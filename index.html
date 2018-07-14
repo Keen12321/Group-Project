@@ -69,29 +69,32 @@
 				<p>555-456-3421 & #8226; Map & #8226; Directions</p>
 			</div>	
 		</div>
-<!-- INFORMATION ARTICLES -->
 
-		<div id="blog"></div>
-
+<!-- Tab Panels -->
 		<div class="tab-panels">
+
+			<!-- Tabs Top -->
 			<ul class="tabs">
-				<li rel="panel1" class="active">Our Story</li>
-				<li rel="panel2">Menu</li>
+				<li rel="panel1">Our Story</li>
+				<li rel="panel2" class="active">Menu</li>
 				<li rel="panel3">Reservations</li>
 			</ul>
 
-			<div id="panel1" class="panel active">
+			<!-- About Content -->
+			<div id="panel1" class="panel">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed modi, in quaerat, expedita, laboriosam sit rem voluptatum, ut id explicabo odio illo aliquid sint nostrum tenetur mollitia! Voluptatem, mollitia, incidunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, corrupti laboriosam, repellendus adipisci dolorum, in laborum ab voluptatibus quis consequuntur qui ipsam! Iste eligendi repellendus corporis accusantium adipisci officiis temporibus?</p>
 				<img src="sidepictures/SurfinTacos(1).jpg">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cum deleniti ipsam nobis dolorum nulla possimus, quos ab minima quas voluptas quis maiores, obcaecati temporibus hic laboriosam provident modi unde!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, pariatur quas, molestias quod ab labore aspernatur ducimus placeat quibusdam voluptatem odio repellendus quae ut, autem totam aperiam tempora architecto nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium tempore a labore dignissimos soluta consequatur nam, error, nesciunt ipsam quod, consequuntur. Incidunt necessitatibus nostrum itaque consequatur deleniti accusantium nisi.</p>
 			</div>
 
-			<div id="panel2" class="panel"
+			<!-- Menu Content -->
+			<div id="panel2" class="panel active">
 				<div id="menuname" class="menu"></div>
 				<div id="menuprice" class="menu"></div>
         <div id="menudescription" class="menu"></div>
 			</div>
-			
+
+			<!-- Reservations Content -->
 			<div id="panel3" class="panel">
 				<label class="label" for="reservation__full-name">Full Name</label>
 				<input id="reservation__full-name" class="reservation-item" type="text" placeholder="Full Name">
@@ -100,33 +103,38 @@
 				<input id="reservation__guests" class="reservation-item" type="text" placeholder="Number of Guests">
 				
 				<label class="label" for="reservation__calendar">Date</label>
-				<input type="date" id="reservation__calendar" class="reservation-item" name="date"
-							value="2018-07-22"
-							min="2018-01-01" max="2018-12-31" />
+				<input type="date" id="reservation__calendar" class="reservation-item" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
 				
 				<label class="label" for="reservation__special-notes">Special Notes</label>
-				<textarea id="reservation__special-notes" class="reservation-item" name="special-notes"></textarea>
-				
+				<textarea id="reservation__special-notes" class="reservation-item" name="special-notes">Food allergies, etc.</textarea>
+
 				<label class="label" for="reservation__seating">Seating Preference</label>
 				<select id="reservation__seating" class="reservation-item">
 					<option value="indoor">Indoor</option>
 					<option value="outdoor">Outdoor</option>
 				</select>
+				
 				<button class="reservation-item" id="reservebutton" type="submit">Reserve Table</button>
 			</div>
+
+		</div><!-- Tab Panels -->
 
 <!-- FOOD PHOTOS -->
 		<div class="foodphotos">
 			<h3>Food Photos...</h3>
+			
 			<div>
 				<img class="sidepic" src="sidepictures/SurfinTacos(5).jpg">
 			</div>
+			
 			<div>
 				<img class="sidepic" src="sidepictures/SurfinTacos(2).jpg">
 			</div>
+			
 			<div>
 				<img class="sidepic" src="sidepictures/SurfinTacos(3).jpg">
 			</div>
+
 			<div>
 				<img class="sidepic" src="sidepictures/SurfinTacos(4).jpg">
 			</div>

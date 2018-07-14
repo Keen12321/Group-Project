@@ -129,20 +129,20 @@ a:hover {
 }
 
 .tab-panels ul {
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid #333;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #333;
 }
 
 .tab-panels ul li {
-    list-style-type: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 125px;
-    height: 40px;
-    margin: 0;
-    cursor: pointer;
+	list-style-type: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 125px;
+	height: 40px;
+	margin: 0;
+	cursor: pointer;
 }
 
 .tab-panels ul li:hover {
@@ -150,29 +150,36 @@ a:hover {
     background: #666;
 }
 
+/* Active Tab */
 .tab-panels ul li.active {
 	color: #fff;
-	background: #666;
+	background: var(--orange-color);
 }
 
 .tab-panels .panel {
 	width: 600px;
-    padding: 30px;
+	padding: 30px;
 }
 
 .panel {
 	display: none;
 }
 
-.panel.active {
+.panel .active {
 	display: block;
 }
 
+/* Panel 1 Tab
+   ========================================================================== */
 #panel1 img{
 	width: 540px;
 	height: 300px;
 }
 
+
+
+/* Panel 3 Tab
+   ========================================================================== */
 #panel3 {
 	width: 600px;
 	height: 375px;
@@ -195,7 +202,7 @@ a:hover {
 }
 
 /* ==========================================================================
-   Information Cards
+   Information Articles
    ========================================================================== */
 /* information div styles */
 #info-cards {
@@ -270,5 +277,7 @@ a:hover {
 	width: 270px;
 	height: 270px;
 }
+
+
 
 
