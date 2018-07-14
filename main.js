@@ -21,6 +21,8 @@ $(function () {
         $panel.find('.tabs li.active').removeClass('active')
         $(this).addClass('active')
 
+        $panel.find('panel.active').slideUp(650, panelToShow)
+
         var panelToShow = $(this).attr('rel')
 
 
