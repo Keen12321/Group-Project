@@ -42,28 +42,30 @@ $(function () {
 // Tabs Menu Section
 	$('.tab-panels .tabs li').on('click', function() {
 
-		var panel = $(this).closest('.tab-panels')
+		 var $panel = $(this).closest('.tab-panels')
 
-		panel.find('.tabs li.active').removeClass('active')
-		
-		$(this).addClass('active')
+        $panel.find('.tabs li.active').removeClass('active')
+        $(this).addClass('active')
 
-		panel.find('panel.active').slideUp(650, panelToShow)
+        var panelToShow = $(this).attr('rel')
 
-		var panelToShow = $(this).attr('rel')
 
-		function showNextPanel() {
-			
-			$(this).removeClass('active')
+        function showNextPanel() {
+            $(this).removeClass('active')
 
-			$('#'+panelToShow).slideDown(650, function() {
-				
-				$(this).addClass('active')
-			
-			})
-		
-		}
-	
+            $('#'+panelToShow).slideDown(function() {
+                $(this).addClass('active')
+            })
+        }
+        $panel.find('.panel.active').slideUp(showNextPanel)
+
 	})
 
+
 })
+
+
+
+
+// TO DO: Have Menu Items Display without repeating code.
+// EXTRA -- Have search bar for food items
