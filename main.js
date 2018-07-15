@@ -11,17 +11,53 @@ $(function () {
 
 	$.getJSON(specialsJSON, function(specials) {
 
-		// $('#info-cards__food-photo').text(data.appetizers[0].image) // TO DO: add photos to be pulled depending on date @victorinspce
+		var d = new Date()	
 
-		$('#info-cards__food-item').text(specials.appetizers[0].name)
-
-		$('#info-cards__food-description').text(specials.appetizers[0].description)
+		switch (d.getDay()) {
+			case (0):
+				$('#info-cards__food-item--name').text(specials.appetizers[0].name)
+				$('#info-cards__food-item--price').text('$' + specials.appetizers[0].price)
+				$('#info-cards__food-item--description').text(specials.appetizers[0].description)
+				break
+			case (1):
+				$('#info-cards__food-item--nameitem').text(specials.appetizers[1].name)
+				$('#info-cards__food-item--price').text('$' + specials.appetizers[1].price)
+				$('#info-cards__food-item--description').text(specials.appetizers[1].description)
+				break
+			case (2):
+				$('#info-cards__food-item--name').text(specials.appetizers[2].name)
+				$('#info-cards__food-item--price').text('$' + specials.appetizers[2].price)
+				$('#info-cards__food-item--description').text(specials.appetizers[2].description)
+				break
+			case (3):
+				$('#info-cards__food-item--name').text(specials.appetizers[3].name)
+				$('#info-cards__food-item--price').text('$' + specials.appetizers[3].price)
+				$('#info-cards__food-item--description').text(specials.appetizers[3].description)
+				break
+			case (4):
+				$('#info-cards__food-item--name').text(specials.entrees[0].name)
+				$('#info-cards__food-item--price').text('$' + specials.entrees[0].price)
+				$('#info-cards__food-item--description').text(specials.entrees[0].description)
+				break
+			case (5):
+				$('#info-cards__food-item--name').text(specials.entrees[1].name)
+				$('#info-cards__food-item--price').text('$' + specials.entrees[1].price)
+				$('#info-cards__food-item--description').text(specials.entrees[1].description)
+				break
+			case (6):
+				$('#info-cards__food-item--name').text(specials.entrees[2].name)
+				$('#info-cards__food-item--price').text('$' + specials.entrees[2].price)
+				$('#info-cards__food-item--description').text(specials.entrees[2].description)
+				break
+			default:
+				console.log('Something has went wrong')
+		}
 
 	})
 
 	// Menu API
   var menuJSON = 'https://obscure-tundra-54269.herokuapp.com/casual-dining'
-	
+
 	$.getJSON (menuJSON, function(menu) {
 
 		$('#menuname').text(menu.name)
@@ -32,12 +68,12 @@ $(function () {
 	})
 
 // Hero Image Carousel
-    $(".hero img:gt(0)").hide()
-    setInterval(function(){
-      $(".hero :first-child").fadeOut()
-      .next("img").fadeIn()
-      .end().appendTo(".hero")
-    }, 5000)
+	$(".hero img:gt(0)").hide()
+	setInterval(function(){
+		$(".hero :first-child").fadeOut()
+		.next("img").fadeIn()
+		.end().appendTo(".hero")
+	}, 5000)
 
 // Tabs Menu Section
 	$('.tab-panels .tabs li').on('click', function() {
@@ -69,3 +105,22 @@ $(function () {
 
 // TO DO: Have Menu Items Display without repeating code.
 // EXTRA -- Have search bar for food items
+// $(function(){
+// 	$('#swapiform').on('submit', function(e) {
+// 		e.preventDefault()
+
+// 		var search = $('#swapisearch').val()
+
+// 		if (search.length > 0) {
+// 			$.get('https://swapi.co/api/people/?search=' + search, function(data) {
+// 				var html = data.results.map(person => {
+// 					name: ${[person.name}
+// 					birth.year: ${person.birth_year}
+// 					gender: ${person.gender}
+// 					url: ${person.url}
+// 				})
+				
+// 			})
+// 		}
+// 	})
+// })
