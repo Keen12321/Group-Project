@@ -82,10 +82,68 @@ a:hover {
 .hero img {
 	position: absolute;
 	top: 10px;
-	left: 0;
-	width: 900px;
+	left: 7px;
+	width: 885px;
 	height: 300px;
 	margin: 0 auto;
+}
+
+/* ==========================================================================
+   Information Articles
+   ========================================================================== */
+/* information div styles */
+#info-cards {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* general card styles */
+.card {
+	height: 100%;
+	width: 290px;
+	padding: 15px;
+	margin-top: 30px;
+	background: var(--light-green-color);
+	color: var(--dark-text-color);
+}
+
+.card h3 {
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+.card h5 {
+	font-size: 16px;
+	font-style: italic;
+	padding: 5px 0;
+}
+
+.card p {
+	word-wrap: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*== Food Specials ==*/
+#info-cards__food-specials p {
+	height: 40px;
+	word-wrap: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	outline: none;
+	margin-bottom: 25px;
+}
+
+#reservation__special-notes {
+	height: 100px;
+}
+
+#reservebutton {
+	height: 35px;
+	font-size: 16px;
+	background: #e63462;
 }
 
 .tab-panels {
@@ -137,10 +195,42 @@ a:hover {
 	height: 300px;
 }
 
-.menu {
-
+#dinnerselection {
+	height: 35px;
+	font: italic 20px Arial, Helvetica, sans-serif;
+	border-bottom: 1px solid #333;
 }
 
+#appetizerborder {
+	border-top: 5px solid #333;
+}
+
+.menunames {
+	height: 55px;
+	font: bold italic 21px Arial, Helvetica, sans-serif;
+	margin-top: 5px;
+	padding-top: 20px;
+	border-bottom: 1px solid #333;
+}
+
+.menuname {
+	font: bold italic 20px Arial, Helvetica, sans-serif;
+	margin-top: 30px;
+}
+
+.menuname::after {
+	border-bottom: 1px dashed #333;
+}
+
+.menuprice {
+	float: right;
+}
+
+.menudescription {
+	padding-top: 15px;
+	width: 450px;
+	font-size: 14px;
+}
 
 #panel3 {
 	width: 600px;
