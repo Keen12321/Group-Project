@@ -16,6 +16,7 @@ html { box-sizing: border-box; }
 
 body {
 	font-family: 'Cabin', sans-serif;
+	font-size: 16px;
 }
 
 .container {
@@ -42,7 +43,7 @@ body {
 .navbar a {
 	text-decoration: none;
 	font-family: 'Cabin', sans-serif;
-	font-size: 14px;
+	font-size: 0.875em;
 	color: #333745;
 	display: inline-block;
 	width: 120px;
@@ -213,12 +214,12 @@ a:hover {
 }
 
 .card h3 {
-	font-size: 18px;
+	font-size: 1.125em;
 	padding-bottom: 10px;
 }
 
 .card h5 {
-	font-size: 16px;
+	font-size: 1em;
 	font-style: italic;
 	padding: 5px 0;
 }
@@ -245,7 +246,7 @@ a:hover {
 
 #reservebutton {
 	height: 35px;
-	font-size: 16px;
+	font-size: 1em;
 	background: #e63462;
 }
 
@@ -292,8 +293,8 @@ a:hover {
 	.tabs {width: 100%;}
 	#panel1 img {/*width: 270px; height: 150px;*/ object-fit: contain; max-width: 100%;}
 	.panel.active {width: 100%;}
-	.panel input, .panel textarea, .panel select, .panel button {/*width: 50%;*/ margin: 0 auto; display: block;}
-	.navbar nav a {font-size: 18px;}
+	.panel input, .panel textarea, .panel select, .panel button {width: 50%; margin: 0 auto; display: block;}
+	.navbar nav a {font-size: 1.125em;}
 	#panel3 {text-align: center;}
 
 }

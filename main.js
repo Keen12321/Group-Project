@@ -34,6 +34,8 @@ $(document).ready(function() {
                $('#panel2').removeClass('active').css("display", "none")
                $('#panel3').removeClass('active').css("display", "none")
              $("#panel1").addClass('active').css("display", "inline-block")
+             $(".tabs li.active").removeClass("active")
+             $(".tabs li:first-child").addClass("active")
              })
  
  
@@ -43,6 +45,8 @@ $(document).ready(function() {
                $('#panel1').removeClass('active').css("display", "none")
                $('#panel3').removeClass('active').css("display", "none")
              $("#panel2").addClass('active').css("display", "inline-block")
+             $(".tabs li.active").removeClass("active")
+             $(".tabs li:nth-child(2)").addClass("active")
              })
  
  
@@ -52,6 +56,8 @@ $(document).ready(function() {
                $('#panel1').removeClass('active').css("display", "none")
                $('#panel2').removeClass('active').css("display", "none")
              $("#panel3").addClass('active').css("display", "inline-block")
+             $(".tabs li.active").removeClass("active")
+             $(".tabs li:nth-child(3)").addClass("active")
              })
 
     var menuJSON = 'https://obscure-tundra-54269.herokuapp.com/casual-dining'
