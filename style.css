@@ -132,16 +132,18 @@ a:hover {
 
 .tab-panels ul li.active {
 	color: #fff;
-	background: #666;
+	background: #fe5f55;
 }
 
 .tab-panels .panel {
 	width: 600px;
     padding: 30px;
+    background: #fe5f55;
 }
 
 .panel {
 	display: none;
+	color: var(--light-text-color);
 }
 
 .panel.active {
@@ -162,9 +164,6 @@ a:hover {
 	width: 600px;
 	height: 375px;
 	padding: 15px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
 	background: var(--orange-color);
 	color: var(--light-text-color);
 }
@@ -189,6 +188,8 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	border-bottom: 2px solid #333745;
+	padding-bottom: 15px;
 }
 
 /* general card styles */
@@ -198,7 +199,8 @@ a:hover {
 	padding: 15px;
 	background: var(--light-green-color);
 	border: 2px dotted var(--orange-color);
-	color: var(--dark-text-color);
+	background: var(--orange-color);
+	color: var(--light-text-color);
 }
 
 .card h3 {
@@ -253,6 +255,11 @@ a:hover {
 	height: 270px;
 }
 
+#hidden__location {
+	display: none;
+	width: 100%;
+}
+
 @media only screen and (max-width: 1100px) {
 	.logo { margin: auto; justify-content: center; margin-bottom: 15px;}
 	.container {flex-direction: column; width: 100%;}
@@ -261,8 +268,12 @@ a:hover {
 	.card {width: 350px;}
 	.hero, .hero img {object-fit: contain; justify-content: center; max-width: 400px;}
 	.hero {margin: 0 auto;}
-	#info-cards__news {}
+	#info-cards__location {display: none;}
 	.navbar {height: 110px; position: absolute;}
+	.tabs {display: flex; flex-direction: row;}
+	.foodphotos {display: flex; flex-direction: row;}
+	.foodphotos h3 {display: none;}
+	#hidden__location {display: block; text-align: center;}
 }
 
-@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 700px) {}
