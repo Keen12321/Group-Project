@@ -271,9 +271,15 @@ a:hover {
 	#info-cards__location {display: none;}
 	.navbar {height: 110px; position: absolute;}
 	.tabs {display: flex; flex-direction: row;}
-	.foodphotos {display: flex; flex-direction: row;}
+	.tabs, .panel {justify-content: center; margin: 0 auto;}
+	.foodphotos {display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
 	.foodphotos h3 {display: none;}
 	#hidden__location {display: block; text-align: center;}
 }
 
-@media only screen and (max-width: 700px) {}
+@media only screen and (max-width: 700px) {
+	#info-cards {border-bottom: none;}
+	.tabs, .panel {width: 100%;}
+	#panel1 img {width: 270px; height: 150px; align-items: center;}
+
+}
