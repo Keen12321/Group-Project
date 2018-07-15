@@ -155,7 +155,12 @@ a:hover {
 	height: 300px;
 }
 
-.menu {
+#panel2 {
+	background: url("assets/parchment.jpg");
+	background-repeat: repeat;
+	object-fit: contain;
+	border: 3px solid #fe5f55;
+	color: var(--dark-text-color);
 
 }
 
@@ -269,7 +274,7 @@ a:hover {
 	.hero, .hero img {object-fit: contain; justify-content: center; max-width: 400px;}
 	.hero {margin: 0 auto;}
 	#info-cards__location {display: none;}
-	.navbar {height: 110px; position: absolute;}
+	.navbar {height: 130px; position: absolute;}
 	.tabs {display: flex; flex-direction: row;}
 	.tabs, .panel {justify-content: center; margin: 0 auto;}
 	.foodphotos {display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
@@ -278,8 +283,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 700px) {
-	#info-cards {border-bottom: none;}
-	.tabs, .panel {width: 100%;}
-	#panel1 img {width: 270px; height: 150px; align-items: center;}
+	#info-cards {border-bottom: none; width: 100%;}
+	.tabs {width: 100%;}
+	#panel1 img {width: 270px; height: 150px;}
+	.panel.active {width: 100%;}
+	.panel input, .panel textarea, .panel select, .panel button {width: 50%; display: block;}
+	.navbar nav a {font-size: 18px;}
 
 }

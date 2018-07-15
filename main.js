@@ -34,7 +34,6 @@ $(document).ready(function() {
                $('#panel2').removeClass('active').css("display", "none")
                $('#panel3').removeClass('active').css("display", "none")
              $("#panel1").addClass('active').css("display", "inline-block")
-              console.log('message here', $('.tabs li.active'))
              })
  
  
@@ -44,7 +43,6 @@ $(document).ready(function() {
                $('#panel1').removeClass('active').css("display", "none")
                $('#panel3').removeClass('active').css("display", "none")
              $("#panel2").addClass('active').css("display", "inline-block")
-              console.log('another message', $('.tabs li.active'))
              })
  
  
