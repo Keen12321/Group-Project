@@ -239,6 +239,11 @@ a:hover {
 	text-overflow: ellipsis;
 }
 
+.card img {
+	width: 250px;
+	height: 90px;
+}
+
 /*== Food Specials ==*/
 #info-cards__food-specials p {
 	height: 40px;
