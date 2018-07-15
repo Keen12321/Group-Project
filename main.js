@@ -4,8 +4,6 @@
  * Collaberators: @Keen12321, @scabbalicious, @victorinspace
  */
 
-$(function () {
-
 // Daily Special API
 	var specialsJSON = 'https://obscure-tundra-54269.herokuapp.com/bar-food'
 
@@ -60,11 +58,51 @@ $(function () {
 
 	$.getJSON (menuJSON, function(menu) {
 
-		$('#menuname').text(menu.name)
+		$('#menuname1').text(menu.appetizers[0].name)
+        $('#menuprice1').text(menu.appetizers[0].price) 
+        $('#menudescription1').text(menu.appetizers[0].description)         
 
-		$('#menuprice').text(menu.price)
+        $('#menuname2').text(menu.appetizers[1].name)
+        $('#menuprice2').text(menu.appetizers[1].price)
+        $('#menudescription2').text(menu.appetizers[1].description)
 
-		$('#menudescription').text(menu.description)
+        $('#menuname3').text(menu.appetizers[2].name)
+        $('#menuprice3').text(menu.appetizers[2].price) 
+        $('#menudescription3').text(menu.appetizers[2].description)         
+
+        $('#menuname4').text(menu.appetizers[3].name)
+        $('#menuprice4').text(menu.appetizers[3].price)
+        $('#menudescription4').text(menu.appetizers[3].description)
+
+
+        $('#entreename1').text(menu.entrees[0].name)
+        $('#entreeprice1').text(menu.entrees[0].price)
+        $('#entreedescription1').text(menu.entrees[0].description)
+
+        $('#entreename2').text(menu.entrees[1].name)
+        $('#entreeprice2').text(menu.entrees[1].price)
+        $('#entreedescription2').text(menu.entrees[1].description)
+
+        $('#entreename3').text(menu.entrees[2].name)
+        $('#entreeprice3').text(menu.entrees[2].price)
+        $('#entreedescription3').text(menu.entrees[2].description)
+
+        $('#entreename3').text(menu.entrees[3].name)
+        $('#entreeprice3').text(menu.entrees[3].price)
+        $('#entreedescription3').text(menu.entrees[3].description)
+
+
+        $('#dessertname1').text(menu.desserts[0].name)
+        $('#dessertprice1').text(menu.desserts[0].price)
+        $('#dessertdescription1').text(menu.desserts[0].description)
+
+        $('#dessertname2').text(menu.desserts[1].name)
+        $('#dessertprice2').text(menu.desserts[1].price)
+        $('#dessertdescription2').text(menu.desserts[1].description)
+
+        $('#dessertname3').text(menu.desserts[2].name)
+        $('#dessertprice3').text(menu.desserts[2].price)
+        $('#dessertdescription3').text(menu.desserts[2].description)
 	})
 
 // Hero Image Carousel

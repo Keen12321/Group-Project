@@ -242,6 +242,7 @@ a:hover {
 .card img {
 	width: 250px;
 	height: 90px;
+	margin-bottom: 5px;
 }
 
 /*== Food Specials ==*/
