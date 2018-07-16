@@ -299,13 +299,11 @@ a:hover {
 }
 
 #info-cards {
-	width: 100%;
-	max-height: 300px;
+	height: 360px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	border-bottom: 2px solid #333745;
-	padding-bottom: 15px;
 }
 
 /* general card styles */

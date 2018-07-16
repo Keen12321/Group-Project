@@ -44,7 +44,7 @@ $(document).ready(function() {
         $('#menuprice1').text(menu.appetizers[0].price) 
         $('#menudescription1').text(menu.appetizers[0].description)
 
-        var allergy = menu.appetizers[0].extra.glutenfree
+        		var allergy = menu.appetizers[0].extra.glutenfree
 				if (allergy === true) {
 					$('#allergy').css('color', 'green')
 				}
@@ -61,7 +61,7 @@ $(document).ready(function() {
         $('#menuprice2').text(menu.appetizers[1].price)
         $('#menudescription2').text(menu.appetizers[1].description)
 
-        var allergy2 = menu.appetizers[1].extra.glutenfree
+        		var allergy2 = menu.appetizers[1].extra.glutenfree
 				if (allergy2 === true) {
 					$('#allergy2').css('color', 'green')
 				}
@@ -78,7 +78,7 @@ $(document).ready(function() {
         $('#menuprice3').text(menu.appetizers[2].price) 
         $('#menudescription3').text(menu.appetizers[2].description)
 
-        var allergy3 = menu.appetizers[2].extra.glutenfree
+        		var allergy3 = menu.appetizers[2].extra.glutenfree
 				if (allergy3 === true) {
 					$('#allergy').css('color', 'green')
 				}
@@ -95,7 +95,7 @@ $(document).ready(function() {
         $('#menuprice4').text(menu.appetizers[3].price)
         $('#menudescription4').text(menu.appetizers[3].description)
 
-        var allergy4 = menu.appetizers[3].extra.glutenfree
+        		var allergy4 = menu.appetizers[3].extra.glutenfree
 				if (allergy4 === true) {
 					$('#allergy4').css('color', 'green')
 				}
@@ -113,7 +113,7 @@ $(document).ready(function() {
         $('#entreeprice1').text(menu.entrees[0].price)
         $('#entreedescription1').text(menu.entrees[0].description)
 
-        var allergy11 = menu.entrees[0].extra.glutenfree
+        		var allergy11 = menu.entrees[0].extra.glutenfree
 				if (allergy11 === true) {
 					$('#allergy11').css('color', 'green')
 				}
@@ -130,7 +130,7 @@ $(document).ready(function() {
         $('#entreeprice2').text(menu.entrees[1].price)
         $('#entreedescription2').text(menu.entrees[1].description)
 
-        var allergy22 = menu.entrees[1].extra.glutenfree
+        		var allergy22 = menu.entrees[1].extra.glutenfree
 				if (allergy22 === true) {
 					$('#allergy22').css('color', 'green')
 				}
@@ -147,7 +147,7 @@ $(document).ready(function() {
         $('#entreeprice3').text(menu.entrees[2].price)
         $('#entreedescription3').text(menu.entrees[2].description)
 
-        var allergy33 = menu.entrees[2].extra.glutenfree
+        		var allergy33 = menu.entrees[2].extra.glutenfree
 				if (allergy33 === true) {
 					$('#allergy33').css('color', 'green')
 				}
@@ -164,7 +164,7 @@ $(document).ready(function() {
         $('#entreeprice3').text(menu.entrees[3].price)
         $('#entreedescription3').text(menu.entrees[3].description)
 
-        var allergy44 = menu.entrees[3].extra.glutenfree
+        		var allergy44 = menu.entrees[3].extra.glutenfree
 				if (allergy44 === true) {
 					$('#allergy44').css('color', 'green')
 				}
@@ -182,7 +182,7 @@ $(document).ready(function() {
         $('#dessertprice1').text(menu.desserts[0].price)
         $('#dessertdescription1').text(menu.desserts[0].description)
 
-        var allergy111 = menu.desserts[0].extra.glutenfree
+        		var allergy111 = menu.desserts[0].extra.glutenfree
 				if (allergy111 === true) {
 					$('#allergy111').css('color', 'green')
 				}
@@ -199,7 +199,7 @@ $(document).ready(function() {
         $('#dessertprice2').text(menu.desserts[1].price)
         $('#dessertdescription2').text(menu.desserts[1].description)
 
-        var allergy222 = menu.desserts[1].extra.glutenfree
+        		var allergy222 = menu.desserts[1].extra.glutenfree
 				if (allergy222 === true) {
 					$('#allergy222').css('color', 'green')
 				}
@@ -216,7 +216,7 @@ $(document).ready(function() {
         $('#dessertprice3').text(menu.desserts[2].price)
         $('#dessertdescription3').text(menu.desserts[2].description)
 
-        var allergy333 = menu.desserts[3].extra.glutenfree
+        		var allergy333 = menu.desserts[3].extra.glutenfree
 				if (allergy333 === true) {
 					$('#allergy333').css('color', 'green')
 				}
@@ -230,6 +230,7 @@ $(document).ready(function() {
 				}
 
     })
+
     // Daily Special API
   var specialsJSON = 'https://obscure-tundra-54269.herokuapp.com/bar-food'
 
