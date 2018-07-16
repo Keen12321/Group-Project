@@ -213,6 +213,7 @@ a:hover {
 
 #appetizerborder {
 	border-top: 5px solid #333;
+}
 
 #panel2 {
 	background: url("assets/parchment.jpg");
@@ -220,7 +221,6 @@ a:hover {
 	object-fit: contain;
 	border: 3px solid #fe5f55;
 	color: var(--dark-text-color);
-
 }
 
 
@@ -263,13 +263,10 @@ a:hover {
 	width: 600px;
 	height: 375px;
 	padding: 15px;
-/* ==========================================================================
-   Information Cards
-   ========================================================================== */
-/* information div styles */
+}
+
 #info-cards {
 	width: 100%;
-	/*height: 300px;*/
 	max-height: 300px;
 	display: flex;
 	flex-direction: row;
@@ -309,6 +306,7 @@ a:hover {
 	width: 100%;
 	height: 30px;
 	padding: 5px;
+}
 /*== Food Specials ==*/
 #info-cards__food-specials p {
 	/*height: 40px;*/
