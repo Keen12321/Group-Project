@@ -90,6 +90,6 @@ $(document).ready(function() {
     $('#info-cards__food-description').text(specials.appetizers[0].description)
 
   })
-
+  
 })
 
