@@ -6,7 +6,7 @@
 
 $(document).ready(function() {
 
-	Daily Special API
+	// Daily Special API
 	var specialsJSON = 'https://obscure-tundra-54269.herokuapp.com/bar-food'
 
 	$.getJSON(specialsJSON, function(specials) {
@@ -48,7 +48,7 @@ $(document).ready(function() {
 				$('#info-cards__food-item--description').text(specials.entrees[2].description)
 				break
 			default:
-				console.log('Something has went wrong')
+				console.log('Something is wrong')
 		}
 	})
 
@@ -59,6 +59,28 @@ $(document).ready(function() {
 		$('#menuname1').text(menu.appetizers[0].name)
 		$('#menuprice1').text(menu.appetizers[0].price) 
 		$('#menudescription1').text(menu.appetizers[0].description)
+
+		$('#allergy').mouseover(function() {
+			$(this).find('.allergy-popup').fadeIn('slow')
+		})
+		$('#allergy').mouseout(function() {
+			$(this).find('.allergy-popup').fadeOut('slow')
+		})
+
+		// extra food information icons
+		var allergy = menu.appetizers[0].extra.glutenfree
+		if (allergy === true) {
+			$('#allergy').css('color', 'green')
+		}
+		var spicy = menu.appetizers[0].extra.spicy
+		if (spicy === true) {
+			$('#spicy').css('color', 'green')
+		}
+		var vegetarian = menu.appetizers[0].extra.vegetarian
+		if (vegetarian === true) {
+			$('#vegan').css('color', 'green')
+		}
+
 
 		$('#menuname2').text(menu.appetizers[1].name)
 		$('#menuprice2').text(menu.appetizers[1].price)
@@ -111,17 +133,12 @@ $(document).ready(function() {
 
 	// Tabs Menu Section
 	$('.tab-panels .tabs li').on('click', function() {
-
 		var $panel = $(this).closest('.tab-panels')
-
 		$panel.find('.tabs li.active').removeClass('active')
 		$(this).addClass('active')
-
 		var panelToShow = $(this).attr('rel')
-
 		function showNextPanel() {
 			$(this).removeClass('active')
-
 			$('#'+panelToShow).slideDown(function() {
 				$(this).addClass('active')
 			})
