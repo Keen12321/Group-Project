@@ -201,6 +201,16 @@ a:hover {
 	padding-bottom: 15px;
 }
 
+#info-cards__news button {
+	color: var(--light-text-color);
+	background: var(--dark-text-color);
+	font-size: 1em;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+
+}
+
 /* general card styles */
 .card {
 	/*height: 100%;*/
@@ -296,5 +306,9 @@ a:hover {
 	.panel input, .panel textarea, .panel select, .panel button {width: 50%; margin: 0 auto; display: block;}
 	.navbar nav a {font-size: 1.125em;}
 	#panel3 {text-align: center;}
+	#info-cards__news p {width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+}
 
+@media only screen and (max-width: 600px) {
+	#info-cards__news {text-align: right;}
 }
